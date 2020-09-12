@@ -12,21 +12,21 @@ class ChartBar extends StatelessWidget {
     return Column(
       children: <Widget>[
         FittedBox(
-          child: Text('\$${spendingAmount.toStringAsFixed(0)}'),
+          child: Text('₹${spendingAmount.toStringAsFixed(0)}'),
         ),
         SizedBox(
           height: 4,
         ),
         Container(
-          height: 120,
-          width: 20,
+          height: 100,
+          width: 16,
           child: Stack(
             children: <Widget>[
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey, width: 1.0),
                   color: Color.fromRGBO(220, 220, 220, 220),
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(8),
                 ),
               ),
               FractionallySizedBox(
