@@ -1,6 +1,6 @@
 # Expense_Tracker
 
-A new Flutter project.
+A Flutter App which stores and keeps records of your recent transactions once you input them.
 
 ## Getting Started
 
