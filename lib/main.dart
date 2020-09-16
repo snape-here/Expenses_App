@@ -112,12 +112,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           )
         : AppBar(
-            title: Text(
+            title: const Text(
               'Personal Expenses',
             ),
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
                 onPressed: () => _startAddNewTransaction(context),
               ),
             ],
@@ -134,7 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
     final pageBody = SafeArea(
       child: SingleChildScrollView(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             if (_isLandscape)
